@@ -1,5 +1,17 @@
 # notification_poc
 
+## Send curl Message
+
+```bash
+curl --request POST \
+  --url https://fcm.googleapis.com/fcm/send \
+  --header 'Authorization: key=AAAAiYs_43I:APA91bGk5f7joY21gtx1gpZx5gwvA6Wq-9pJgi91vXrOptKydYOc-LL7hxFuCeveUPqVwZHsuEkqrhlXvoCpHFuAWhrY-RKeJ98p3LE2zEh3YgWM5K5cnbBYn3BWEgnYgKeKZqS1v8AF' \
+  --header 'Content-Type: application/json' \
+  --data '{"registration_ids":[
+"eEZ9Kf52ZuUEotgPKsBwc0:APA91bFRJFi8IV1yU2Ry_Pis-FWKKb815gJ0svrBYU6m9SNC-hlZzNll7MgWzRFvW9BqsNnS-GakTUwmCjJyOC-9LPVJnfn0ryjLiwBZ7fly7tQTbJSS1TAOOob0ofox4AkqhFIMvs-w"
+]
+```
+
 ## Build Setup
 
 ```bash

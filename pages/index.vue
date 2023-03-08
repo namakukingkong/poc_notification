@@ -4,6 +4,12 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  async mounted() {
+    const currentToken = await this.$fire.messaging.getToken()
+    console.info('Init FCM id: ', currentToken)
+
+  }
 }
 </script>
+
